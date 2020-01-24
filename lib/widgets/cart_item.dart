@@ -33,10 +33,10 @@ class CartItem extends StatelessWidget {
           horizontal: 15,
           vertical: 4,
         ),
-        alignment: Alignment.centerRight,
+        alignment: Alignment.centerLeft,
         padding: EdgeInsets.only(right: 20),
       ),
-      direction: DismissDirection.endToStart,
+      direction: DismissDirection.startToEnd,
       onDismissed: (direction) {
         Provider.of<Cart>(context, listen: false).removeItem(productId);
       },
